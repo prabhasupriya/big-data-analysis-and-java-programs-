@@ -1,0 +1,23 @@
+import java.util.*;
+public class SETelemet{
+public static void main(String[] args){
+Set<Integer> hashmap = new HashSet<>();
+hashmap.add(10);
+hashmap.add(20);
+hashmap.add(30);
+hashmap.add(30);//no duplicate elemets are allowed 
+System.out.println("the elements in set " +hashmap);
+
+hashmap.remove(20);
+System.out.println("remove the elemets " + hashmap);
+System.out.println("contains the elemets " +hashmap.contains(10));
+        System.out.println("Size of set: " + hashmap.size());
+        // Loop through hashmap
+        System.out.print("hashmap elements: ");
+        for (int x : hashmap) {
+            System.out.print(x + " ");
+        }
+        // Clear all
+        hashmap.clear();
+        System.out.println("\nAfter clear: " + hashmap);
+    } }
