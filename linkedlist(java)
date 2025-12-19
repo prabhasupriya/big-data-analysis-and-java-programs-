@@ -1,0 +1,31 @@
+import java.util.*; 
+public class LinkedListExample {
+    public static void main(String[] args) {
+        // Create LinkedList
+        LinkedList<Integer> list = new LinkedList<>();
+        // Adding elements
+        list.add(10);            // add at end
+        list.add(20);
+        list.addFirst(5);        // add at beginning
+        list.addLast(30);        // add at end
+        System.out.println("List after additions: " + list);
+        // Removing elements
+        list.remove();           // removes first element
+        list.removeLast();       // removes last element        
+   System.out.println("List after removals: " + list);             
+      int value = list.get(0);   // get first element
+        System.out.println("Element at index 0: " + value);
+// Updating element
+        list.set(0, 100);         // set new value
+        System.out.println("List after update: " + list);
+        // Checking size
+        System.out.println("Size of list: " + list.size());
+        // Check if empty
+        System.out.println("Is list empty? " + list.isEmpty());
+        // Search
+        System.out.println("Contains 20? " + list.contains(20));
+        // Clear all
+        list.clear();
+        System.out.println("List after clear: " + list);     }  }
+
+
