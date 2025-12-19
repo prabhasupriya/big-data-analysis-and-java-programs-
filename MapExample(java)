@@ -1,0 +1,29 @@
+import java.util.*;
+public class MapExample {    
+ public static void main(String[] args) {
+        // Create a HashMap
+        Map<Integer, String> map = new HashMap<>();
+        // Adding key-value pairs
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Cherry");
+        System.out.println("Map: " + map);
+        // Access value by key
+        System.out.println("Value for key 2: " + map.get(2));
+        // Remove a key-value pair
+        map.remove(1);
+        System.out.println("After removing key 1: " + map);
+System.out.println("Contains key 3? " + map.containsKey(3));
+        System.out.println("Contains value 'Banana'? " + map.containsValue("Banana"));
+        // Size and empty check
+        System.out.println("Size of map: " + map.size());
+        System.out.println("Is map empty? " + map.isEmpty());
+        // Iterate through map
+        System.out.println("Iterating through map:");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " → " + entry.getValue());
+        }
+        // Clear all elements
+        map.clear();
+        System.out.println("After clear: " + map);
+    } }
